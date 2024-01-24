@@ -1,20 +1,123 @@
-.header {
-  width: 100%;
-  padding: 20px 0;
+nav a {
+  /* color: #1f1f1f; */
+  color: #ff6000;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
-.nav {
+header {
+  height: 100vh;
+  background: url(../img/homeland.jpg) center no-repeat fixed;
+  /* background-position: center; */
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+header h1 {
+  position: absolute;
+  font-size: clamp(3.5rem, 15vw + 1rem, 12rem);
+  text-transform: lowercase;
+  letter-spacing: 5px;
+  font-weight: 700;
+  transform: translateY(-50%);
+}
+
+.glass {
+  position: absolute;
+  width: 42%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.h-glass {
+  background: url(../img/homeland.jpg) center no-repeat fixed;
+  background-size: cover;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: transparent;
+  -webkit-text-fill-color: transparent;
+  top: 20%;
+  right: 0;
+  animation: text1 0.8s ease-in forwards;
+}
+
+.h-regular {
+  color: #fff;
+  top: 40%;
+  left: 42%;
+  animation: text2 0.8s ease-in forwards;
+}
+
+.glass > div {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 1.5em;
+}
+
+.glass p {
+  color: #ccc;
+  font-size: 0.9em;
+  line-height: 27px;
+  max-width: 27em;
+}
+
+.glass h2 {
+  color: #fff;
+}
+
+.glass a svg {
+  margin-left: 0.3em;
+}
+
+.glass a svg path {
+  fill: #ff6000;
+}
+
+.icon-link {
+  color: #ff6000;
+}
+
+nav {
+  /* display: flex;
   width: 100%;
+  justify-content: space-between;
+  align-items: center; */
+  position: relative;
+  z-index: 99;
+  transition: 0.4s;
+  padding: 30px 0;
+}
+
+.menu {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav-list {
+.social-list {
   display: flex;
   align-items: center;
+  gap: 20px;
+}
+
+.nav-list {
+  display: none;
+  align-items: center;
   justify-content: flex-end;
-  gap: 40px;
+  gap: 30px;
 }
 
 .nav-link {
@@ -29,12 +132,13 @@
 }
 
 .menu__button {
+  display: none;
   width: 40px;
   height: 40px;
   margin: 0;
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex; */
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -98,3 +202,35 @@
 .icon-cross:focus {
   color: #2196f3;
 } */
+
+header h1 {
+  opacity: 0;
+}
+
+@keyframes text1 {
+  0% {
+    opacity: 0;
+    transform: translate(-2em, -50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+}
+
+@keyframes text2 {
+  0% {
+    opacity: 0;
+    transform: translate(2em, -50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+}
+
+@media (min-width: 900px) {
+  .nav-list {
+    display: flex;
+  }
+}

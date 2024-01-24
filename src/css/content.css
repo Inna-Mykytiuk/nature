@@ -1,3 +1,7 @@
 .content {
   padding: 100px 0;
 }
+
+.content p {
+  max-width: 900px;
+}
