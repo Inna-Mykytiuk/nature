@@ -1,5 +1,13 @@
 .header {
+  width: 100%;
   padding: 20px 0;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-list {
@@ -19,3 +27,74 @@
 .nav-link:focus {
   color: #747bff;
 }
+
+.menu__button {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+
+.menu__button svg {
+  fill: #000;
+  width: 24px;
+  height: 16px;
+}
+
+/* @media (min-width: 768px) {
+  .menu__button {
+    display: none;
+  }
+}
+.menu__button__link--current,
+.menu__button:hover,
+.menu__button:focus {
+  fill: #2196f3;
+}
+
+.menu__icon {
+  width: 24px;
+  height: 16px;
+  fill: #2196f3;
+} */
+
+/* .menu__button.is-open {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 15px;
+}
+
+.menu__button .icon-cross {
+  display: none;
+}
+
+.menu__button.is-open .icon-cross {
+  display: block;
+  fill: currentColor;
+  width: 11px;
+  height: 11px;
+}
+
+.menu__button .icon-cross {
+  display: none;
+}
+
+.menu__button.is-open .icon-burger {
+  display: none;
+}
+
+.icon-cross:hover,
+.icon-cross:focus {
+  color: #2196f3;
+} */

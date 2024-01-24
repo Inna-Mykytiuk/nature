@@ -4,19 +4,61 @@
 @import url('./reset.css');
 @import url('./vite-promo.css');
 @import url('./header.css');
+@import url('./hero.css');
+@import url('./content.css');
 
-:root {
-  font-family: 'Rye';
-  font-size: 50px;
-  line-height: 24px;
-  font-weight: 400;
+:root,
+body {
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  width: 100%;
+  min-height: 100vh;
 
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
-
+  font-weight: 400;
+  line-height: 1.5;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  appearance: none;
+  background: #000;
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 5px;
+}
+
+.container {
+  width: 320px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
 }

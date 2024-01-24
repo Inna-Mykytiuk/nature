@@ -1,13 +1,68 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+  <div class="container">
+    <nav class="nav">
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social__link" href="" aria-label="іконка">
+            <svg class="social__icon" width="20" height="20">
+              <use href="../img/social-defs.svg#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+        <li class="nav-item">
+          <a class="social__link" href="" aria-label="іконка">
+            <svg class="social__icon" width="20" height="20">
+              <use href="../img/social-defs.svg#icon-twit"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="social__link" href="" aria-label="іконка">
+            <svg class="social__icon" width="20" height="20">
+              <use href="../img/social-defs.svg#icon-face"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="social__link" href="" aria-label="іконка">
+            <svg class="social__icon" width="20" height="20">
+              <use href="../img/social-defs.svg#icon-lkdl"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Contacts</a>
+        </li>
+      </ul>
+
+      <button
+        class="menu__button"
+        data-menu-button
+        type="button"
+        aria-expanded="false"
+      >
+        <svg
+          class="menu__icon"
+          aria-label="Перемикач мобільного меню"
+          width="40"
+          height="40"
+        >
+          <use class="icon-burger" href="../img/sprites.svg#burger"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
 </header>
