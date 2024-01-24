@@ -6,36 +6,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/nature/assets/index-d2c0c324.js"></script>
-    <link rel="stylesheet" href="/nature/assets/index-9d405f79.css">
+    <script type="module" crossorigin src="/nature/assets/index-8b381a7f.js"></script>
+    <link rel="stylesheet" href="/nature/assets/index-d2422d3c.css">
   </head>
   <body>
     <header>
       <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+  <div class="container">
+    <nav class="nav">
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social__link" href="" aria-label="іконка">
+            <svg class="social__icon" width="20" height="20">
+              <use href="../img/social-defs.svg#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+        <li class="nav-item">
+          <a class="social__link" href="" aria-label="іконка">
+            <svg class="social__icon" width="20" height="20">
+              <use href="../img/social-defs.svg#icon-twit"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="social__link" href="" aria-label="іконка">
+            <svg class="social__icon" width="20" height="20">
+              <use href="../img/social-defs.svg#icon-face"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="social__link" href="" aria-label="іконка">
+            <svg class="social__icon" width="20" height="20">
+              <use href="../img/social-defs.svg#icon-lkdl"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Contacts</a>
+        </li>
+      </ul>
+
+      <button
+        class="menu__button"
+        data-menu-button
+        type="button"
+        aria-expanded="false"
+      >
+        <svg
+          class="menu__icon"
+          aria-label="Перемикач мобільного меню"
+          width="40"
+          height="40"
+        >
+          <use class="icon-burger" href="../img/sprites.svg#burger"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
 </header>
 
     </header>
     <main>
       <!-- Loads the specified .html file -->
       <section class="container">
-  <h1 class="dev">Dev Titans</h1>
+  <!-- <h1 class="dev">Dev Titans</h1> -->
   <!-- Path to images as from index.html file -->
-  <img class="titans" src="/nature/assets/111-91d274b8.jpg" alt="" width="300" />
+  <!-- <img class="titans" src="./img/111.jpg" alt="" width="300" /> -->
 
-  <svg width="64" height="64" class="studio-about-icon">
-    <use href="/nature/assets/icons-3c84b115.svg#icon-astronaut"></use>
-  </svg>
+  <!-- <svg width="64" height="64" class="studio-about-icon">
+    <use href="./img/icons.svg#icon-astronaut"></use>
+  </svg> -->
+
+  <div class="glass">
+    <h1 class="h-glass">Home</h1>
+    <div>
+      <div>
+        <h2>Discover tours</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+          sunt!
+        </p>
+        <a href="#" aria-label="іконка" class="icon-link"
+          >View
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 34 20"
+            fill="none"
+          >
+            <path
+              d="M24.3035 0.534363L22.7126 2.12532L29.4625 8.87515H0.125031V11.1251H29.4622L22.7126 17.8747L24.3035 19.4658L33.7694 10L24.3035 0.534363Z"
+              fill="black"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <h2 class="h-glass">Land</h2>
+</section>
+
+      <section class="content">
+  <div class="container">
+      <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, molestiae
+    nobis rerum nihil numquam ab porro praesentium maxime eligendi laborum
+    fugiat fuga. Sint officiis ea est eveniet. Aliquid fugit itaque repudiandae
+    nesciunt sapiente dolorem quod consequatur laboriosam, voluptates totam
+    voluptatibus.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, molestiae
+    nobis rerum nihil numquam ab porro praesentium maxime eligendi laborum
+    fugiat fuga. Sint officiis ea est eveniet. Aliquid fugit itaque repudiandae
+    nesciunt sapiente dolorem quod consequatur laboriosam, voluptates totam
+    voluptatibus.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, molestiae
+    nobis rerum nihil numquam ab porro praesentium maxime eligendi laborum
+    fugiat fuga. Sint officiis ea est eveniet. Aliquid fugit itaque repudiandae
+    nesciunt sapiente dolorem quod consequatur laboriosam, voluptates totam
+    voluptatibus. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    Neque, molestiae nobis rerum nihil numquam ab porro praesentium maxime
+    eligendi laborum fugiat fuga. Sint officiis ea est eveniet. Aliquid fugit
+    itaque repudiandae nesciunt sapiente dolorem quod consequatur laboriosam,
+    voluptates totam voluptatibus. Lorem ipsum dolor sit amet consectetur,
+    adipisicing elit. Neque, molestiae nobis rerum nihil numquam ab porro
+    praesentium maxime eligendi laborum fugiat fuga. Sint officiis ea est
+    eveniet. Aliquid fugit itaque repudiandae nesciunt sapiente dolorem quod
+    consequatur laboriosam, voluptates totam voluptatibus.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, molestiae
+    nobis rerum nihil numquam ab porro praesentium maxime eligendi laborum
+    fugiat fuga. Sint officiis ea est eveniet. Aliquid fugit itaque repudiandae
+    nesciunt sapiente dolorem quod consequatur laboriosam, voluptates totam
+    voluptatibus.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, molestiae
+    nobis rerum nihil numquam ab porro praesentium maxime eligendi laborum
+    fugiat fuga. Sint officiis ea est eveniet. Aliquid fugit itaque repudiandae
+    nesciunt sapiente dolorem quod consequatur laboriosam, voluptates totam
+    voluptatibus. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    Neque, molestiae nobis rerum nihil numquam ab porro praesentium maxime
+    eligendi laborum fugiat fuga. Sint officiis ea est eveniet. Aliquid fugit
+    itaque repudiandae nesciunt sapiente dolorem quod consequatur laboriosam,
+    voluptates totam voluptatibus. Lorem ipsum dolor sit amet consectetur,
+    adipisicing elit. Neque, molestiae nobis rerum nihil numquam ab porro
+    praesentium maxime eligendi laborum fugiat fuga. Sint officiis ea est
+    eveniet. Aliquid fugit itaque repudiandae nesciunt sapiente dolorem quod
+    consequatur laboriosam, voluptates totam voluptatibus.
+  </p>
+
+  </div>
+
 </section>
 
     </main>
