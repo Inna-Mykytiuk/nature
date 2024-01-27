@@ -1,9 +1,36 @@
 nav a {
-  /* color: #1f1f1f; */
   color: #ff6000;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+nav .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  position: relative;
+  z-index: 99;
+  transition: 0.4s;
+  padding: 30px 0;
+}
+
+nav ul {
+  padding: 0;
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+nav ul a {
+  font-size: 0.8em;
+  text-transform: uppercase;
 }
 
 header {
@@ -47,24 +74,29 @@ header h1 {
   background-clip: text;
   -webkit-background-clip: transparent;
   -webkit-text-fill-color: transparent;
-  top: 20%;
+  top: 30%;
   right: 0;
   animation: text1 0.8s ease-in forwards;
 }
 
 .h-regular {
   color: #fff;
-  top: 40%;
+  top: 50%;
   left: 42%;
   animation: text2 0.8s ease-in forwards;
+  animation-delay: 500ms;
 }
 
 .glass > div {
-  box-sizing: border-box;
   display: flex;
+  box-sizing: border-box;
   justify-content: center;
   align-items: flex-end;
-  padding: 1.5em;
+  padding: 0 30px 100px;
+}
+
+.glass > div div {
+  margin: 0 1em;
 }
 
 .glass p {
@@ -90,48 +122,37 @@ header h1 {
   color: #ff6000;
 }
 
-nav {
-  /* display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center; */
-  position: relative;
-  z-index: 99;
-  transition: 0.4s;
-  padding: 30px 0;
-}
-
-.menu {
+/* .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
-.social-list {
+/* .social-list {
   display: flex;
   align-items: center;
   gap: 20px;
-}
+} */
 
-.nav-list {
+/* .nav-list {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 30px;
-}
+} */
 
-.nav-link {
+/* .nav-link {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.5;
-}
+} */
 
-.nav-link:hover,
+/* .nav-link:hover,
 .nav-link:focus {
   color: #747bff;
-}
+} */
 
-.menu__button {
+nav .container .menu__button {
   display: none;
   width: 40px;
   height: 40px;
@@ -181,6 +202,12 @@ header h1 {
   }
 }
 
+@media (max-width: 1040px) {
+  .h-glass {
+    font-size: 8rem;
+  }
+}
+
 @media (max-width: 900px) {
   nav .container {
     display: flex;
@@ -190,10 +217,12 @@ header h1 {
   nav .menu {
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
     height: 0;
     overflow: hidden;
     transition: all 0.7s;
   }
+
   .nav-list li {
     display: block;
     margin: 0.5em 0;
@@ -208,15 +237,66 @@ header h1 {
     order: 1;
     padding-top: 1em;
   }
-  .menu__button {
+  nav .container .menu__button {
     display: inline-block;
     font-size: 1.4em;
     cursor: pointer;
   }
+  nav .container .nav-toggle {
+    height: 15em;
+    justify-content: space-between;
+  }
+  .nav-background {
+    background-color: #fff;
+  }
 }
 
-/* @media (min-width: 768px) {
-  .menu__button {
+@media (max-width: 768px) {
+  .glass > div {
+    box-sizing: border-box;
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1.5rem;
   }
-} */
+  .glass {
+    width: 90%;
+    height: initial;
+    min-height: 30em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+  }
+  .h-glass {
+    right: 32%;
+    top: 20%;
+    color: #1f1f1f;
+    background-attachment: initial;
+    background-size: 100% 130%;
+    font-size: 6rem;
+  }
+  .h-regular {
+    top: 43%;
+  }
+  nav .container .menu__button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .glass > div {
+    margin-top: 4em;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    height: 700px;
+  }
+}
+
+@media (max-width: 500px) {
+  .glass > div div:nth-child(1) {
+    display: none;
+  }
+}
